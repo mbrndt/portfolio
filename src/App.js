@@ -1,16 +1,16 @@
 import "./App.css";
 import { Main } from "./pages";
 import { Navbar } from "./components/navbar";
-import background from "./assets/background.jpg";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Main />
+      <Footer />
     </div>
   );
 }
 
 export default App;
-// style={{ backgroundImage: `url(${background})` }}
