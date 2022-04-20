@@ -5,7 +5,11 @@
   align-items: center;
   width: 100rem;
   margin-top: auto;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 2rem;
   margin-left: 10rem;
+}
+
+.heart {
+  margin: 1rem;
 }

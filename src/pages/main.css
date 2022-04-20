@@ -5,9 +5,16 @@
   justify-content: center;
   height: 85vh;
   color: #f0f0f0;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px black;
 }
 .folder {
-  height: 2rem;
+  height: 3rem;
+  justify-content: space-between;
+}
+
+.item {
+  margin-bottom: 1rem;
 }
 
 .columns {
@@ -16,16 +23,16 @@
 
 .column1 {
   flex: 1;
-
+  margin-right: 1rem;
   padding: 10px;
 }
 
 .column2 {
-  padding: 10px;
+  padding: 20px;
 }
 
 .column3 {
-  flex: 3;
-
   padding: 10px;
+  margin: 2rem;
+  align-items: flex-end;
 }

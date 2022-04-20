@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+.heart {
+  color: white;
+}
+
 nav {
   height: 2rem;
   background-color: rgba(0, 0, 0, 0.3);
