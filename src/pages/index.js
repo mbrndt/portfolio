@@ -5,8 +5,18 @@ import { navbar } from "../components/navbar";
 export const Main = () => {
   return (
     <div className="main">
-      <p>main</p>
-      <p>main 2</p>
+      <div className="column1">
+        <p>trash</p>
+      </div>
+      <div className="column2">
+        <p>projects</p>
+        <p>aboutMe</p>
+      </div>
+      <div className="column3">
+        <p>Programme</p>
+        <p>Jakobs10UsabilityHeuristi...Posters4</p>
+        <p>Bildschirmfotos</p>
+      </div>
     </div>
   );
 };

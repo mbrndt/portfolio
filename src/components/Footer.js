@@ -4,8 +4,13 @@ import "./Footer.css";
 export const Footer = () => {
   return (
     <div className="footer">
-      <p>footer</p>
-      <p>footer 2</p>
+      <p>youtube</p>
+      <p>davinci</p>
+      <p>figma</p>
+      <p>xd</p>
+      <p>vscode</p>
+      <p>spotify</p>
+      <p>kakaotalk</p>
     </div>
   );
 };
