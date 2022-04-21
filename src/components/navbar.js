@@ -4,6 +4,9 @@ import Ai from "../assets/ai.png";
 import Heart from "../assets/heart.png";
 import Search from "../assets/search.png";
 import Wifi from "../assets/wifi-signal.png";
+import moment from "moment";
+
+const currentDateTime = Date().toLocaleString();
 
 export const Navbar = () => {
   return (
@@ -22,7 +25,7 @@ export const Navbar = () => {
       <img src={Wifi} alt="wifi icon" className="icon2" />
 
       <img src={Search} alt="folder" className="search" />
-      <p>korea, Di. 16:42</p>
+      <p> 정선, {currentDateTime}</p>
     </nav>
   );
 };
