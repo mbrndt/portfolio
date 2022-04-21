@@ -3,8 +3,13 @@ body {
   margin: 0;
 }
 
-.heart {
-  color: white;
+.icon {
+  height: 2rem;
+  background-color: white;
+  border-radius: 50%;
+}
+.icon2 {
+  height: 2rem;
 }
 
 nav {

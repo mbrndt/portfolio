@@ -2,16 +2,26 @@ import React from "react";
 import "./navbar.css";
 import Ai from "../assets/ai.png";
 import Heart from "../assets/heart.png";
+import Search from "../assets/search.png";
+import Wifi from "../assets/wifi-signal.png";
 
 export const Navbar = () => {
   return (
     <nav>
-      <image src={Heart} alt="folder" className="heart" />
-      <p>icon</p>
-      <p>placeholder</p>
-      <p>placeholder</p>
+      <img src={Ai} alt="heart icon" className="icon" />
+      <p>mareike brandt</p>
 
-      <p>search</p>
+      <p>Edit</p>
+      <p>Selection</p>
+      <p>View</p>
+      <p>Go</p>
+
+      <p>Window</p>
+      <p>Help</p>
+      <p>Terminal</p>
+      <img src={Wifi} alt="wifi icon" className="icon2" />
+
+      <img src={Search} alt="folder" className="search" />
       <p>korea, Di. 16:42</p>
     </nav>
   );

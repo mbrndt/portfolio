@@ -7,8 +7,8 @@ export const Main = () => {
   return (
     <div className="main">
       <div className="column1" align="left">
-        <img src={Trash} alt="trash" className="folder" />
-        <p>trash</p>
+        <img src={Trash} alt="trash" className="trash" />
+        <p className="trash_p">trash</p>
       </div>
       <div className="column2">
         <div className="item">
