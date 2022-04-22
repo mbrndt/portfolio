@@ -12,6 +12,8 @@ import github from "../assets/github.png";
 import instagram from "../assets/instagram.png";
 import chrome from "../assets/chrome.png";
 import whatsapp from "../assets/whatsapp.png";
+import Badge from "@mui/material/Badge";
+import MailIcon from "@mui/icons-material/Mail";
 
 export const Footer = () => {
   return (
@@ -51,6 +53,9 @@ export const Footer = () => {
       <a href="https://www.instagram.com/mareikebrndt/" target="_blank">
         <img src={instagram} alt="instagram icon" className="folder" />
       </a>
+      <Badge badgeContent={1000} max={4} color="primary">
+        <MailIcon color="white" />
+      </Badge>
       <img src={whatsapp} alt="whatsapp icon" className="folder" />
     </div>
   );
