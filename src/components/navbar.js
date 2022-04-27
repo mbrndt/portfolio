@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import Ai from "../assets/ai.png";
 import Heart from "../assets/heart.png";
@@ -6,9 +6,12 @@ import Search from "../assets/search.png";
 import Wifi from "../assets/wifi-signal.png";
 import moment from "moment";
 
-const currentDateTime = Date().toLocaleString();
-
 export const Navbar = () => {
+  const [dateState, setDateState] = useState(new Date());
+  useEffect(() => {
+    setInterval(() => setDateState(new Date()), 100);
+  }, []);
+
   return (
     <nav>
       <img src={Ai} alt="heart icon" className="icon" />
@@ -25,7 +28,17 @@ export const Navbar = () => {
       <img src={Wifi} alt="wifi icon" className="icon2" />
 
       <img src={Search} alt="folder" className="search" />
-      <p> 정선, {currentDateTime}</p>
+      <p>
+        {" "}
+        정선,{" "}
+        {dateState.toLocaleString("en-US", {
+          hour: "numeric",
+          minute: "numeric",
+          second: "numeric",
+          hour12: true,
+        })}
+        , korean standard time
+      </p>
     </nav>
   );
 };
