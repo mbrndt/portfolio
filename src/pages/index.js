@@ -5,8 +5,6 @@ import Folder from "../assets/folder.png";
 import Trash from "../assets/trash.png";
 import Modal from "../components/Modal";
 
-import FileModal from "../components/FileModal";
-
 export const Main = () => {
   // download file
   const saveFile = () => {
@@ -17,11 +15,8 @@ export const Main = () => {
   };
   //
   //modal
-  const [openModal, setOpenModal] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  // const handleOpen = () => setOpen(true);
-  // const handleClose = () => setOpen(false);
-  //
+  const [isOpen2, setIsOpen2] = useState(false);
 
   return (
     <div className="main">
@@ -35,26 +30,32 @@ export const Main = () => {
             <img src={Folder} alt="folder" className="folder" />
             <p>AboutMe</p>
           </button>
-
-          <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-            <p onClick={saveFile}>resume(eng)</p>
-            <p onClick={saveFile}>resume(deutsch)</p>
-          </Modal>
-          <button
-            className="openModalBtn"
-            onClick={() => {
-              setOpenModal(true);
-            }}
+          <Modal
+            open={isOpen}
+            onClose={() => setIsOpen(false)}
+            title={"About Me"}
           >
+            <p onClick={saveFile}>resume(eng)</p>
+          </Modal>
+
+          <button onClick={() => setIsOpen2(true)}>
             <img src={Folder} alt="folder" className="folder" />
             <p>projects</p>
           </button>
-          {openModal && <FileModal closeModal={setOpenModal} />}
+          <Modal
+            open={isOpen2}
+            onClose={() => setIsOpen2(false)}
+            title={"projects"}
+          >
+            <a href="https://mareblog.vercel.app/">choonsik</a>
+            <p>projects modal</p>
+          </Modal>
         </div>
       </div>
       <div className="column3">
         <img src={Folder} alt="folder" className="folder" />
         <p>Programme</p>
+
         <img src={Folder} alt="folder" className="folder" />
         <p>Jakobs10UsabilityHeuristi...Posters4</p>
         <img src={Folder} alt="folder" className="folder" />
