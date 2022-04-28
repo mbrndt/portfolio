@@ -1,28 +1,27 @@
 import React, { useState } from "react";
 import "./main.css";
+import { saveAs } from "file-saver";
 import Folder from "../assets/folder.png";
 import Trash from "../assets/trash.png";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import Modal from "@mui/material/Modal";
+import Modal from "../components/Modal";
 
-const style = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: 400,
-  bgcolor: "background.paper",
-  border: "2px solid #000",
-  boxShadow: 24,
-  p: 4,
-};
+import FileModal from "../components/FileModal";
 
 export const Main = () => {
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  // download file
+  const saveFile = () => {
+    saveAs(
+      "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+      "example.pdf"
+    );
+  };
+  //
+  //modal
+  const [openModal, setOpenModal] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  // const handleOpen = () => setOpen(true);
+  // const handleClose = () => setOpen(false);
+  //
 
   return (
     <div className="main">
@@ -32,12 +31,25 @@ export const Main = () => {
       </div>
       <div className="column2">
         <div className="item">
-          <img src={Folder} alt="folder" className="folder" />
-          <p>projects</p>
-        </div>
-        <div className="item">
-          <img src={Folder} alt="folder" className="folder" />
-          <p>aboutMe</p>
+          <button onClick={() => setIsOpen(true)}>
+            <img src={Folder} alt="folder" className="folder" />
+            <p>AboutMe</p>
+          </button>
+
+          <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+            <p onClick={saveFile}>resume(eng)</p>
+            <p onClick={saveFile}>resume(deutsch)</p>
+          </Modal>
+          <button
+            className="openModalBtn"
+            onClick={() => {
+              setOpenModal(true);
+            }}
+          >
+            <img src={Folder} alt="folder" className="folder" />
+            <p>projects</p>
+          </button>
+          {openModal && <FileModal closeModal={setOpenModal} />}
         </div>
       </div>
       <div className="column3">

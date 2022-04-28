@@ -29,7 +29,7 @@ export const Footer = () => {
       <img src={xd} alt="adobe xd icon" className="folder" />
       <img src={vs} alt="vs code icon" className="folder" />
       <a
-        href="https://open.spotify.com/track/25o1M3Jse81xusDV6WhvC5?si=81ed15bf0df54fb5"
+        href="https://open.spotify.com/track/4EClxfvLJkpTg2jkZ4Cw2P?si=f13c7774d0d64288"
         target="_blank"
       >
         <img src={spotify} alt="spotify icon" className="folder" />
