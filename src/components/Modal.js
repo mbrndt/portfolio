@@ -6,11 +6,15 @@ const MODAL_STYLES = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  backgroundColor: "gray",
-  padding: "20px",
+  textcolor: "black",
+  backgroundColor: "#F2EDEB",
+  padding: "10px",
   zIndex: 1000,
-  height: "15rem",
+  minheight: "15rem",
   width: "15rem",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "flex-start",
 };
 
 const OVERLAY_STYLES = {
@@ -24,20 +28,30 @@ const OVERLAY_STYLES = {
 };
 
 const CLOSEBUTTON_STYLES = {
-  right: "10px",
   textshadow: "none",
+  backgroundColor: "CCDAD1",
 };
 
-export default function Modal({ open, children, onClose, title }) {
+const HEADER_STYLES = {
+  fontSize: "1.5rem",
+};
+
+export default function Modal({ open, children, onClose, title, Folder }) {
   if (!open) return null;
 
   return (
     <>
       <div style={OVERLAY_STYLES} />
       <div className="modal" style={MODAL_STYLES}>
-        <button onClick={onClose} style={CLOSEBUTTON_STYLES}>
-          X
-        </button>
+        <div className="headerbar" style={HEADER_STYLES}>
+          <p id="headertitle">
+            home{">"}
+            {title}
+          </p>
+          <button id="modbutton" onClick={onClose} style={CLOSEBUTTON_STYLES}>
+            _ [] X
+          </button>
+        </div>
         <div className="title">{title && <h3>{title}</h3>}</div>
         {children}
       </div>

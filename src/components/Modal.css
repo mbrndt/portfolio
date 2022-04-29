@@ -3,6 +3,30 @@
   color: #f0f0f0;
 }
 
-button {
-  padding-left: 15rem;
+#modbutton {
+  text-shadow: none;
+  color: black;
+}
+
+a,
+h3,
+.headerbar {
+  text-shadow: none;
+  color: black;
+  font-weight: 100;
+}
+
+.headerbar {
+  background-color: #adc4dc;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+p {
+  margin: 0%;
+}
+
+#headertitle {
+  font-size: 1rem;
 }

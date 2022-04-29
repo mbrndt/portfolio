@@ -23,8 +23,8 @@ export const Footer = () => {
         target="_blank"
       >
         <img src={youtube} alt="youtube icon" className="folder" />{" "}
-      </a>
-
+      </a>{" "}
+      <img src={figma} alt="figma icon" className="folder" />
       <img src={davinci} alt="davinci icon" className="folder bk" />
       <img src={xd} alt="adobe xd icon" className="folder" />
       <img src={vs} alt="vs code icon" className="folder" />
@@ -43,7 +43,7 @@ export const Footer = () => {
       </a>
       <a href="https://github.com/mbrndt" target="_blank">
         <img src={github} alt="kakaotalk icon" className="folder bk" />
-      </a>
+      </a>{" "}
       <a
         href="https://www.google.com/search?q=how+to+change+font+colour+in+css&rlz=1C5CHFA_enDE790DE790&oq=how+to+change+font+colour+in+css&aqs=chrome..69i57j0i10l4j0i22i30l5.25401j0j7&sourceid=chrome&ie=UTF-8"
         target="_blank"
