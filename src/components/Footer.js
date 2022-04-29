@@ -21,6 +21,8 @@ export const Footer = () => {
       <a
         href="https://www.youtube.com/channel/UCmDYNxaQ9rbzdzlFSfvECog"
         target="_blank"
+        without
+        rel="noopener noreferrer"
       >
         <img src={youtube} alt="youtube icon" className="folder" />{" "}
       </a>{" "}
@@ -31,6 +33,8 @@ export const Footer = () => {
       <a
         href="https://open.spotify.com/track/4EClxfvLJkpTg2jkZ4Cw2P?si=f13c7774d0d64288"
         target="_blank"
+        without
+        rel="noopener noreferrer"
       >
         <img src={spotify} alt="spotify icon" className="folder" />
       </a>
@@ -38,19 +42,33 @@ export const Footer = () => {
       <a
         href="https://www.linkedin.com/in/mareike-brandt-4911b520b/"
         target="_blank"
+        without
+        rel="noopener noreferrer"
       >
         <img src={linkedin} alt="kakaotalk icon" className="folder" />
       </a>
-      <a href="https://github.com/mbrndt" target="_blank">
+      <a
+        href="https://github.com/mbrndt"
+        target="_blank"
+        without
+        rel="noopener noreferrer"
+      >
         <img src={github} alt="kakaotalk icon" className="folder bk" />
       </a>{" "}
       <a
         href="https://www.google.com/search?q=how+to+change+font+colour+in+css&rlz=1C5CHFA_enDE790DE790&oq=how+to+change+font+colour+in+css&aqs=chrome..69i57j0i10l4j0i22i30l5.25401j0j7&sourceid=chrome&ie=UTF-8"
         target="_blank"
+        without
+        rel="noopener noreferrer"
       >
         <img src={chrome} alt="chrome icon" className="folder bk" />
       </a>
-      <a href="https://www.instagram.com/mareikebrndt/" target="_blank">
+      <a
+        href="https://www.instagram.com/mareikebrndt/"
+        target="_blank"
+        without
+        rel="noopener noreferrer"
+      >
         <img src={instagram} alt="instagram icon" className="folder" />
       </a>
       <Badge badgeContent={1000} max={4} color="primary">

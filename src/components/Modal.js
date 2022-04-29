@@ -11,7 +11,7 @@ const MODAL_STYLES = {
   padding: "10px",
   zIndex: 1000,
   minheight: "15rem",
-  width: "15rem",
+  mionwidth: "15rem",
   display: "flex",
   flexDirection: "column",
   alignItems: "flex-start",
