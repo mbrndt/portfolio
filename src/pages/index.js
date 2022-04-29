@@ -16,7 +16,6 @@ import Jakob8 from "../assets/jakob/Jakob8.pdf";
 import Jakob9 from "../assets/jakob/Jakob9.pdf";
 import Jakob10 from "../assets/jakob/Jakob10.pdf";
 import JkobMary from "../assets/jakob/JkobMary.pdf";
-import ChonsaReport from "../assets/chonsarep.pdf";
 
 export const Main = () => {
   // download file
@@ -101,14 +100,6 @@ export const Main = () => {
               target="_blank"
             >
               chonsa_documentantion_webversion
-            </a>
-            <a
-              href={ChonsaReport}
-              without
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              chonsa_documentantion.pdf
             </a>
           </Modal>
         </div>
