@@ -58,7 +58,7 @@ export const Main = () => {
             </a>
 
             <a
-              href={Resumepdf}
+              href="https://www.canva.com/design/DAE_KrWpiBM/obutKC0Et7YoiwGlUF5W-A/view"
               without
               rel="noopener noreferrer"
               target="_blank"
