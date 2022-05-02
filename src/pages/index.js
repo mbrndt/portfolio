@@ -86,12 +86,12 @@ export const Main = () => {
               choonsik.com
             </a>
             <a
-              href={Resumepdf}
+              href="https://www.canva.com/design/DAE_QUNcCng/tzNyoKPmAKAz7L_40m7EPQ/view"
               without
               rel="noopener noreferrer"
               target="_blank"
             >
-              choonsik_documentantion.pdf
+              choonsik_documentantion.com
             </a>
             <a
               href="https://www.canva.com/design/DAEyHVlSk5Y/XzWWxcXr4IFtTtvgEz4xQg/view#1"
@@ -99,7 +99,7 @@ export const Main = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              chonsa_documentantion_webversion
+              chonsa_documentation.com
             </a>
           </Modal>
         </div>
