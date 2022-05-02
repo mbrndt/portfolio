@@ -101,6 +101,14 @@ export const Main = () => {
             >
               chonsa_documentation.com
             </a>
+            <a
+              href="https://www.canva.com/design/DAE_gc7uL24/tH0sihLYgerd54dnAuAEzg/view"
+              without
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              portfolio_documentation.com
+            </a>
           </Modal>
         </div>
       </div>
