@@ -3,7 +3,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 85vh;
+  /* height: 85vh; */
+  height: 85%;
   color: #f0f0f0;
   font-weight: bolder;
   text-shadow: 1px 1px 2px black;
