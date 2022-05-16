@@ -94,6 +94,14 @@ export const Main = () => {
               choonsik_documentantion.com
             </a>
             <a
+              href="https://github.com/mbrndt/LastFm_API"
+              without
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Last.fm-API (REST API)
+            </a>
+            <a
               href="https://www.canva.com/design/DAEyHVlSk5Y/XzWWxcXr4IFtTtvgEz4xQg/view#1"
               without
               rel="noopener noreferrer"
