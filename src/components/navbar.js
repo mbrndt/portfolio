@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import Ai from "../assets/ai.png";
-import Heart from "../assets/heart.png";
 import Search from "../assets/search.png";
 import Wifi from "../assets/wifi-signal.png";
-import moment from "moment";
+import PostmanIcon from "../assets/postman.jpg";
 
 export const Navbar = () => {
   const [dateState, setDateState] = useState(new Date());
@@ -26,8 +25,8 @@ export const Navbar = () => {
       <p>Help</p>
       <p>Terminal</p>
       <img src={Wifi} alt="wifi icon" className="icon2" />
-
-      <img src={Search} alt="folder" className="search" />
+      <img src={PostmanIcon} alt="Postman icon" className="icon2" />
+      <img src={Search} alt="search icon" className="search" />
       <p>
         {" "}
         정선,{" "}

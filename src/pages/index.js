@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./main.css";
-import { saveAs } from "file-saver";
+// import { saveAs } from "file-saver";
 import Folder from "../assets/folder.png";
 import Trash from "../assets/trash.png";
 import Modal from "../components/Modal";
@@ -19,12 +19,12 @@ import JkobMary from "../assets/jakob/JkobMary.pdf";
 
 export const Main = () => {
   // download file
-  const saveFile = () => {
-    saveAs(
-      "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-      "example.pdf"
-    );
-  };
+  // const saveFile = () => {
+  //   saveAs(
+  //     "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+  //     "example.pdf"
+  //   );
+  // };
   //
   //modal
   const [isOpen, setIsOpen] = useState(false);

@@ -14,6 +14,7 @@ import chrome from "../assets/chrome.png";
 import whatsapp from "../assets/whatsapp.png";
 import Badge from "@mui/material/Badge";
 import MailIcon from "@mui/icons-material/Mail";
+import MongoDB from "../assets/mongodb.png";
 
 export const Footer = () => {
   return (
@@ -75,6 +76,7 @@ export const Footer = () => {
         <MailIcon color="white" />
       </Badge>
       <img src={whatsapp} alt="whatsapp icon" className="folder" />
+      <img src={MongoDB} alt="mongodb icon" className="folder icon" />
     </div>
   );
 };
