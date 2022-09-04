@@ -54,6 +54,7 @@ p {
 #content_background {
   border: 0.3rem solid #2c5294;
   background-color: #d6cec8;
+  width: -webkit-fill-available;
 }
 
 #icons {

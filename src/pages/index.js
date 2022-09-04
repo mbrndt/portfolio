@@ -86,6 +86,14 @@ export const Main = () => {
               choonsik.com
             </a>
             <a
+              href="https://studyboo.vercel.app/"
+              without
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              studyboo.com (Flashcard Study App)
+            </a>
+            <a
               href="https://www.canva.com/design/DAE_QUNcCng/tzNyoKPmAKAz7L_40m7EPQ/view"
               without
               rel="noopener noreferrer"
