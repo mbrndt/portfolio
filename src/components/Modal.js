@@ -1,17 +1,24 @@
+import {
+  CloseSharp,
+  FullscreenRounded,
+  MinimizeSharp,
+} from "@mui/icons-material";
+
 import React from "react";
 import "./Modal.css";
 
 const MODAL_STYLES = {
-  position: "fixed",
   top: "50%",
   left: "50%",
-  transform: "translate(-50%, -50%)",
-  textcolor: "black",
-  backgroundColor: "#F2EDEB",
-  padding: "10px",
   zIndex: 1000,
   minheight: "15rem",
-  mionwidth: "15rem",
+  minwidth: "15rem",
+  margin: "10px",
+  background: "#fff",
+  boxshadow: "0px 2px 4px 0px rgba(0, 0, 0, 0.9",
+  position: "fixed",
+  transform: "translate(-50%, -50%)",
+  textcolor: "black",
   display: "flex",
   flexDirection: "column",
   alignItems: "flex-start",
@@ -44,16 +51,21 @@ export default function Modal({ open, children, onClose, title, Folder }) {
       <div style={OVERLAY_STYLES} />
       <div className="modal" style={MODAL_STYLES}>
         <div className="headerbar" style={HEADER_STYLES}>
-          <p id="headertitle">
+          <p id="header_title">
             home{">"}
             {title}
           </p>
-          <button id="modbutton" onClick={onClose} style={CLOSEBUTTON_STYLES}>
-            _ [] X
+          <button id="mod_button" onClick={onClose} style={CLOSEBUTTON_STYLES}>
+            <div id="icons">
+              <MinimizeSharp />
+              <FullscreenRounded /> <CloseSharp />
+            </div>
           </button>
         </div>
-        <div className="title">{title && <h3>{title}</h3>}</div>
-        {children}
+        <div id="content_background">
+          <div className="title">{title && <h3>{title}</h3>}</div>
+          <div className="content">{children}</div>
+        </div>
       </div>
     </>
   );

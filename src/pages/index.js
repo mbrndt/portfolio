@@ -78,7 +78,7 @@ export const Main = () => {
             Folder={"Folder"}
           >
             <a
-              href="https://mareblog.vercel.app/"
+              href="https://choonsik.vercel.app/"
               without
               rel="noopener noreferrer"
               target="_blank"
